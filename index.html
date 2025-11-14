@@ -2,34 +2,56 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <title>OrdoMedIQ · GOÄ-Radiologie-Suite</title>
+  <title>OrdoMedIQ · GOÄ-Radiologie-Suite – MedDok rein, §12-sichere Rechnung raus</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="OrdoMedIQ · GOÄ-Radiologie-Suite – von MedDok zu §12-sicherer Rechnung mit Explain-Trail und PVS-Handover. Speziell für Radiologie, MVZ und Kliniken." />
+  <meta name="description" content="OrdoMedIQ · GOÄ-Radiologie-Suite: Von der radiologischen Dokumentation zur §12-sicheren GOÄ-Rechnung mit Explain-Trail und PVS-/PAD-Handover. Entwickelt für Radiologie, MVZ, Kliniken und PVS." />
+  <meta name="theme-color" content="#050816" />
+
   <!-- Open Graph -->
   <meta property="og:title" content="OrdoMedIQ · GOÄ-Radiologie-Suite" />
-  <meta property="og:description" content="MedDok rein – §12-sichere Rechnung raus. Radiologie-zentrierte GOÄ-Engine mit Explain-Trail und PVS-Handover." />
+  <meta property="og:description" content="MedDok rein – §12-sichere Rechnung raus. Radiologie-zentrierte GOÄ-Engine mit Explain-Trail, §4/§5/§6(2)/§10/§12-Check und PVS-/PAD-Handover." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ordomediq.github.io/landingpage" />
   <meta property="og:image" content="https://ordomediq.github.io/landingpage/ordomedIQ_LOGO.png" />
+  <meta property="og:site_name" content="OrdoMedIQ · GOÄ-Radiologie-Suite" />
+
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="ordomedIQ_LOGO.png" />
+
+  <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "OrdoMedIQ · GOÄ-Radiologie-Suite",
+    "applicationCategory": "MedicalSoftware",
+    "operatingSystem": "Windows, macOS, Linux (serverbasiert)",
+    "description": "Radiologie-zentrierte GOÄ-Engine für private Abrechnung: MedDok rein – §12-sichere Rechnung raus – mit Explain-Trail und PVS-/PAD-Handover.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "OrdoMedIQ"
+    }
+  }
+  </script>
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header" role="banner">
     <div class="container header-inner">
-      <a href="#hero" class="brand">
+      <a href="#hero" class="brand" aria-label="Zur Startsektion">
         <img src="ordomedIQ_LOGO.svg" alt="OrdoMedIQ Logo" class="brand-logo" />
         <span class="brand-text">
           <span class="brand-name">OrdoMedIQ</span>
           <span class="brand-tagline">GOÄ-Radiologie-Suite</span>
         </span>
       </a>
-      <nav class="nav">
-        <button class="nav-toggle" aria-label="Navigation öffnen">
+      <nav class="nav" aria-label="Hauptnavigation">
+        <button class="nav-toggle" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="primary-nav">
           <span></span><span></span><span></span>
         </button>
-        <ul class="nav-list">
+        <ul class="nav-list" id="primary-nav">
           <li><a href="#hero">Produkt</a></li>
           <li><a href="#flow">Workflow</a></li>
           <li><a href="#features">Funktionen</a></li>
@@ -44,189 +66,256 @@
 
   <main>
     <!-- Hero -->
-    <section id="hero" class="section hero">
+    <section id="hero" class="section hero" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Radiologie · GOÄ · PVS</p>
-          <h1>Mehr Erlös. <br class="br-xl" />Sofort abrechnungsbereit.</h1>
+          <p class="eyebrow">Radiologie · GOÄ · PVS / PAD</p>
+          <h1 id="hero-title">
+            MedDok rein.<br class="br-xl" />
+            §12-sichere Rechnung raus.
+          </h1>
           <p class="hero-subtitle">
-            OrdoMedIQ · GOÄ-Radiologie-Suite verbindet Befund, GOÄ-Regelwerk und PVS-Handover:
-            deterministisch, auditfest und für Radiologie-Workflows gebaut.
+            OrdoMedIQ · GOÄ-Radiologie-Suite verbindet radiologische Befunde, GOÄ-Regelwerk
+            und PVS-/PAD-Handover zu einem durchgängigen Flow:
+            deterministisch, auditfest und für reale Radiologie-Workflows gebaut.
           </p>
           <div class="hero-actions">
-            <a href="#contact" class="btn primary">Demo anfragen</a>
-            <a href="#flow" class="btn ghost">Workflow ansehen</a>
+            <a href="#contact" class="btn primary">Demo &amp; Pilot anfragen</a>
+            <a href="#flow" class="btn ghost">Workflow in 4 Schritten</a>
           </div>
-          <div class="hero-metrics">
+          <div class="hero-metrics" aria-label="Zielgrößen und Effekte">
             <div class="metric">
               <span class="metric-value">&gt;90%</span>
-              <span class="metric-label">First-Pass-Quote PKV/Beihilfe*</span>
+              <span class="metric-label">First-Pass-Quote PKV/Beihilfe* als Zielkorridor</span>
             </div>
             <div class="metric">
               <span class="metric-value">-40%</span>
-              <span class="metric-label">weniger Rückfragen der PVS*</span>
+              <span class="metric-label">weniger Rückfragen von PVS &amp; Kostenträgern*</span>
             </div>
             <div class="metric">
-              <span class="metric-footnote">*Zielwerte aus Pilotprojekten – abhängig von Dokumentation &amp; PVS-Set-up.</span>
+              <span class="metric-footnote">
+                *Zielwerte aus Pilot-Setups – abhängig von Dokumentationsqualität und PVS-/Klinik-Set-up.
+              </span>
             </div>
           </div>
         </div>
-        <div class="hero-card">
+
+        <aside class="hero-card" aria-label="Visualisierte Demo eines Radiologie-Cases">
           <div class="hero-card-header">
-            <span class="pill pill-green">Live-Demo</span>
-            <span class="hero-card-title">Radiologie-Case · CT Abdomen</span>
+            <span class="pill pill-green">Live-Demo Archetyp</span>
+            <span class="hero-card-title">Radiologie-Case · CT Abdomen mit KM</span>
           </div>
           <div class="hero-card-body">
             <div class="hero-row">
               <span class="label">MedDok</span>
-              <span class="value">CT Abdomen mit KM, Mehrphasen, Notfall</span>
+              <span class="value">
+                CT Abdomen/Becken mit KM, Mehrphasen, Notfallaufnahme, teleradiologischer Befund
+              </span>
             </div>
             <div class="hero-row">
               <span class="label">Engine</span>
-              <span class="value">GOÄ-Regeln, Excludes, Zuschläge, Faktorpolitik</span>
+              <span class="value">
+                GOÄ-Abschnitt O, Excludes, Zuschläge, Faktorpolitik, §10-Auslagen-Logik
+              </span>
             </div>
             <div class="hero-row">
               <span class="label">Output</span>
-              <span class="value">§12-validierte Rechnung + PAD-Export</span>
+              <span class="value">
+                §12-validierte Rechnung + PAD-kompatibler Export + Explain-Trail je Position
+              </span>
             </div>
             <div class="hero-divider"></div>
-            <ul class="hero-tags">
-              <li>Explain-Trail</li>
-              <li>§4 / §5 / §10 / §12 GOÄ</li>
-              <li>PVS-ready</li>
-              <li>Offline-fähig</li>
+            <ul class="hero-tags" aria-label="Kernprinzipien">
+              <li>Explain-Trail &amp; Hash-Kette</li>
+              <li>§4 / §5 / §6(2) / §10 / §12 GOÄ</li>
+              <li>PVS- &amp; Klinik-ready</li>
+              <li>Lokal-first &amp; offline-fähig</li>
             </ul>
           </div>
-        </div>
+        </aside>
       </div>
     </section>
 
     <!-- Flow -->
-    <section id="flow" class="section flow">
+    <section id="flow" class="section flow" aria-labelledby="flow-title">
       <div class="container">
         <header class="section-header">
-          <h2>Von MedDok zu Cash – der OrdoMedIQ-Flow</h2>
-          <p>Ein klarer, reproduzierbarer Workflow für Radiologie, MVZ und Klinik.</p>
+          <h2 id="flow-title">Von MedDok zu Cash – der OrdoMedIQ-Flow</h2>
+          <p>Ein klarer, reproduzierbarer Revenue-Cycle für Radiologie, MVZ, Klinik und PVS.</p>
         </header>
-        <div class="flow-steps">
-          <div class="flow-step">
+        <div class="flow-steps" aria-label="Vier Schritte im Workflow">
+          <article class="flow-step">
             <span class="step-number">1</span>
-            <h3>MedDok importieren</h3>
-            <p>Befunde, RIS-Daten, DICOM-Metadaten &amp; Kontext fließen in den MedDok-Workspace.</p>
+            <h3>MedDok importieren &amp; kuratieren</h3>
+            <p>
+              Befunde, RIS-Daten, DICOM-Metadaten und Kontext fließen in den MedDok-Workspace –
+              strukturiert nach Fällen, Untersuchungen und Modalitäten.
+            </p>
             <ul>
-              <li>FHIR / HL7 / DICOM-Brücken</li>
-              <li>Timeline-Ansicht pro Fall</li>
-              <li>Evidence-Tags für alle relevanten GOÄ-Trigger</li>
+              <li>FHIR / HL7 / DICOM-Brücken (z. B. Patient, Encounter, ImagingStudy)</li>
+              <li>Timeline-Ansicht je Fall mit CT/MRT/Röntgen-Serien</li>
+              <li>Evidence-Tags für alle relevanten GOÄ-Trigger (KM, Zeit, Ort, Komplexität)</li>
             </ul>
-          </div>
-          <div class="flow-step">
+          </article>
+
+          <article class="flow-step">
             <span class="step-number">2</span>
             <h3>GOÄ-Engine ausführen</h3>
-            <p>Regelbasiert, deterministisch, mit Explain-Trail für jede Entscheidung.</p>
+            <p>
+              Die Regel-Engine interpretiert die MedDok deterministisch – jede Entscheidung ist
+              reproduzierbar und im Explain-Trail dokumentiert.
+            </p>
             <ul>
-              <li>Radiologie-Regeln nach Abschnitt O</li>
-              <li>Zuschläge, Excludes, Faktor-Policies</li>
-              <li>Unterscheidung ärztlich / technisch / Auslagen</li>
+              <li>Radiologie-Regeln nach Abschnitt O inkl. Einmaligkeitslogik &amp; Serienstückelungsschutz</li>
+              <li>Zuschläge (A–D/J/K1/K2), Excludes und Faktor-Policies pro Ziffer</li>
+              <li>Trennung ärztliche Leistung / technische Leistung / Auslagen nach §10 GOÄ</li>
             </ul>
-          </div>
-          <div class="flow-step">
+          </article>
+
+          <article class="flow-step">
             <span class="step-number">3</span>
-            <h3>§12 prüfen &amp; freigeben</h3>
-            <p>§12-Validator und Ampellogik stellen sicher, dass nur vollständige Rechnungen rausgehen.</p>
+            <h3>§12 prüfen, Ampeln grün schalten</h3>
+            <p>
+              §12-Validator und Ampellogik blocken unvollständige Rechnungen –
+              erst wenn alle Pflichtangaben sitzen, ist der Fall „go“.
+            </p>
             <ul>
-              <li>Pflichtangaben, Kurztexte, Begründungen</li>
-              <li>Integrierter §5-/§6(2)-Check</li>
-              <li>Revisionssicherer Explain-Trail</li>
+              <li>Pflichtangaben, Kurztexte (≤ 280 Zeichen) und Begründungen im §12-Editor</li>
+              <li>Integrierter §5-/§6(2)-Check inkl. Begründungsvorschlägen</li>
+              <li>Revisionssicherer Explain-Trail bis zum einzelnen Regel-Event</li>
             </ul>
-          </div>
-          <div class="flow-step">
+          </article>
+
+          <article class="flow-step">
             <span class="step-number">4</span>
-            <h3>PVS / PAD-Handover</h3>
-            <p>Exportfertige Daten für PVS-Partner, MVZ-Verwaltung oder Klinik-Controlling.</p>
+            <h3>PVS-/PAD-Handover &amp; Cash</h3>
+            <p>
+              Exportfertige Daten für PVS-Partner, MVZ-Verwaltung und Klinik-Controlling –
+              inklusive Monitoring der weiteren Prozessschritte.
+            </p>
             <ul>
-              <li>PAD-kompatible Struktur</li>
-              <li>Optionale PDF-Rechnung</li>
-              <li>Monitoring im Cockpit &amp; BI</li>
+              <li>PAD-kompatible Struktur &amp; PDF-Rechnung auf Knopfdruck</li>
+              <li>Optionale Batch-Exporte und Status-Monitoring</li>
+              <li>BI-Kacheln für First-Pass-Quote, DSO und Erlösentwicklung</li>
             </ul>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- Features -->
-    <section id="features" class="section features">
+    <section id="features" class="section features" aria-labelledby="features-title">
       <div class="container">
         <header class="section-header">
-          <h2>Funktionen, die Radiologie und PVS wirklich brauchen</h2>
-          <p>Keine Spielerei, sondern Engine, Oberflächen und Handover auf GOÄ-Niveau.</p>
+          <h2 id="features-title">Acht Kernfunktionen – exakt auf Radiologie &amp; PVS zugeschnitten</h2>
+          <p>
+            Engine, Oberflächen und Handover sind von Beginn an auf GOÄ-Niveau, Radiologie-Realität
+            und PVS-Prozesse ausgerichtet – ohne Spielerei.
+          </p>
         </header>
-        <div class="features-grid">
+        <div class="features-grid" aria-label="Kernfunktionen der GOÄ-Radiologie-Suite">
           <article class="feature-card">
-            <h3>MedDok-Workspace</h3>
-            <p>3-Pane-Layout mit Timeline, Befund-/Dokument-Viewer und Evidence-Rail für alle abrechnungsrelevanten Details.</p>
+            <h3>MedDok-Workspace (3-Pane)</h3>
+            <p>
+              Dreigeteilter Workspace mit Fall-Timeline, Befund-/Dokument-Viewer und Evidence-Rail.
+              Alle GOÄ-relevanten Informationen sind an einem Ort sichtbar und markierbar.
+            </p>
           </article>
+
           <article class="feature-card">
-            <h3>Abrechnungs-Cockpit</h3>
-            <p>Positionstabellen, Ampeln, §12-Editor, Faktor- und Zuschlags-Checks – optimiert für Radiologie-Mengen.</p>
+            <h3>Abrechnungs-Cockpit &amp; §12-Editor</h3>
+            <p>
+              Positionstabellen mit Ampeln, Faktor- und Zuschlags-Checks, integrierter §12-Editor,
+              Live-Zeichenzähler und Textbausteine für Begründungen &amp; Kurztexte.
+            </p>
           </article>
+
           <article class="feature-card">
-            <h3>Explain-Trail by Design</h3>
-            <p>Jede Regelentscheidung ist als Event nachvollziehbar – inkl. Quelle, Triggern und Hash-Kette.</p>
+            <h3>Explain-Trail &amp; Hash-Kette</h3>
+            <p>
+              Jede Regelentscheidung wird als Event mit Eingaben, Ergebnis und Quelle geloggt.
+              Eine Hash-Kette verbindet die Events zu einem revisionssicheren Explain-Trail.
+            </p>
           </article>
+
           <article class="feature-card">
-            <h3>Radiologie-Regelwerk</h3>
-            <p>GOÄ-Abschnitt O mit Einmaligkeitsregeln, Serienstückelungsschutz, KM-Logik und Teleradiologie-Besonderheiten.</p>
+            <h3>Radiologie-Regelwerk Abschnitt O</h3>
+            <p>
+              Spezialisierte Logik für CT/MRT/Röntgen: Einmaligkeitsregeln, Schutz vor
+              Serienstückelung, KM-Handling, Teleradiologie-Besonderheiten und typische Kombis.
+            </p>
           </article>
+
           <article class="feature-card">
-            <h3>PVS- &amp; PAD-Handover</h3>
-            <p>Exportfertige Datenstrukturen, die PVS-Prozesse abkürzen und Rückfragen minimieren.</p>
+            <h3>PVS- &amp; PAD-Handover-Manager</h3>
+            <p>
+              Exporter für PAD- und PDF-Rechnungen mit Status-Monitoring vom Submit bis zur
+              Verbuchung. Ziel: möglichst wenig Rückfragen, maximale Prozessklarheit.
+            </p>
           </article>
+
           <article class="feature-card">
-            <h3>BI-Cockpit</h3>
-            <p>Kacheln und Drill-Downs für Cash, Compliance, Productivity und Revenue Integrity.</p>
+            <h3>BI- &amp; Revenue-Integrity-Cockpit</h3>
+            <p>
+              KPI-Kacheln zu Cash, Compliance, Produktivität und Revenue Integrity mit Drill-Down
+              bis auf Fall- und Positionsebene – inklusive What-if-Szenarien.
+            </p>
           </article>
+
           <article class="feature-card">
-            <h3>Lokal-first &amp; offline-fähig</h3>
-            <p>Radiologie-Setups, in denen Datensouveränität und Offline-Betrieb Pflicht sind, werden explizit unterstützt.</p>
+            <h3>Lokal-first, offline-fähig, datensouverän</h3>
+            <p>
+              Betrieb auf eigenen Servern oder im Kliniknetz; verschlüsselbare Datenbank,
+              minimale Angriffsfläche und keine Patientendaten in URLs oder Logs.
+            </p>
           </article>
+
           <article class="feature-card">
-            <h3>OEM-ready</h3>
-            <p>Saubere API- und Modularchitektur für RIS-/KIS-/PVS-Partner, die das Regelwerk integrieren wollen.</p>
+            <h3>OEM-ready Architektur</h3>
+            <p>
+              Saubere Modul- und API-Struktur für RIS-/KIS-/PVS-Partner. Das Regelwerk lässt sich
+              als Engine integrieren – inklusive Explain-Trail und §12-Validator.
+            </p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- Personas -->
-    <section id="personas" class="section personas">
+    <section id="personas" class="section personas" aria-labelledby="personas-title">
       <div class="container personas-grid">
         <header class="section-header align-left">
-          <h2>Ein Produkt, mehrere Perspektiven</h2>
-          <p>Radiologie, PVS und Verwaltung arbeiten auf derselben Wahrheit – mit ihrer eigenen Sicht.</p>
+          <h2 id="personas-title">Ein Produkt, mehrere Perspektiven</h2>
+          <p>
+            Radiologie, PVS und Verwaltung arbeiten auf derselben Datenbasis – jede Rolle mit ihrer
+            eigenen Sicht und ihrem eigenen Fokus.
+          </p>
         </header>
         <div class="persona-cards">
           <article class="persona-card">
             <h3>Radiolog:in / MVZ</h3>
             <ul>
-              <li>Schneller Überblick über abrechnungsrelevante Fälle</li>
-              <li>Explain-Trail auf Facharzt-Niveau</li>
-              <li>Abrechnungsfreigabe mit einem Klick</li>
+              <li>Sofortsicht auf abrechnungsrelevante Fälle &amp; Modalitäten</li>
+              <li>Explain-Trail auf Facharzt-Niveau für Streitfälle &amp; Nachfragen</li>
+              <li>Abrechnungsfreigabe in einem strukturierten „Tresen-Flow“</li>
             </ul>
           </article>
+
           <article class="persona-card">
             <h3>PVS / Abrechnung</h3>
             <ul>
-              <li>Technisch saubere Rechnungen mit PAD-Export</li>
-              <li>Transparenz über Zuschläge, Faktoren und Analogbewertungen</li>
-              <li>Weniger Nacharbeit durch §12-Pre-Check</li>
+              <li>Technisch saubere Rechnungen mit PAD-Export und §12-Pre-Check</li>
+              <li>Transparente Sicht auf Zuschläge, Faktoren und Analogbewertungen</li>
+              <li>Deutlich weniger Nacharbeit durch deterministische Engine-Entscheidungen</li>
             </ul>
           </article>
+
           <article class="persona-card">
             <h3>Klinik / Controlling</h3>
             <ul>
-              <li>BI-Kacheln für Erlös, DSO und First-Pass-Quote</li>
-              <li>Vergleich von Standorten, Modalitäten, Diensten</li>
-              <li>Basis für GOÄ-Strategie und Investitionsentscheidungen</li>
+              <li>BI-Kacheln für Erlös, DSO, First-Pass-Quote und Standortvergleiche</li>
+              <li>Analysen nach Modalität, Dienstzeit, Teleradiologie-Setup</li>
+              <li>Feste Grundlage für GOÄ-Strategie, Investitions- und Personalentscheidungen</li>
             </ul>
           </article>
         </div>
@@ -234,46 +323,55 @@
     </section>
 
     <!-- Compliance -->
-    <section id="compliance" class="section compliance">
+    <section id="compliance" class="section compliance" aria-labelledby="compliance-title">
       <div class="container compliance-grid">
         <div>
           <header class="section-header align-left">
-            <h2>Gebaut für GOÄ, nicht dagegen</h2>
-            <p>Technik folgt Recht – nicht umgekehrt.</p>
+            <h2 id="compliance-title">Gebaut aus der GOÄ heraus – nicht dagegen</h2>
+            <p>Technik folgt Recht. Jede Regel ist juristisch herleitbar und dokumentiert.</p>
           </header>
-          <ul class="checklist">
-            <li><span>§4 GOÄ:</span> Abbildbarkeit persönlicher Leistung, Delegation und Teleradiologie.</li>
-            <li><span>§5 GOÄ:</span> Faktorbereiche, Begründungstexte und Schwellenprüfung pro Position.</li>
+          <ul class="checklist" aria-label="Wesentliche GOÄ-Bezüge">
+            <li><span>§4 GOÄ:</span> Modellierung persönlicher Leistung, Delegation und Teleradiologie-Settings.</li>
+            <li><span>§5 GOÄ:</span> Faktorbereiche, Schwellenprüfung und Begründungstexte pro Position.</li>
             <li><span>§6(2) GOÄ:</span> Strenge Analoglogik nur bei echten Lücken – keine verdeckten Zielleistungsverdopplungen.</li>
-            <li><span>§10 GOÄ:</span> Kontrastmittel, Material &amp; Auslagen getrennt von ärztlicher Leistung.</li>
-            <li><span>§12 GOÄ:</span> Pflichtangaben und Kurztexte als technischer Blocking-Point – erst dann ist eine Rechnung „grün“.</li>
+            <li><span>§10 GOÄ:</span> Kontrastmittel, Material &amp; Auslagen strikt getrennt von ärztlicher Leistung.</li>
+            <li><span>§12 GOÄ:</span> Pflichtangaben und Kurztexte als technischer Blocking-Point – erst mit „grün“ ist eine Rechnung versandfähig.</li>
           </ul>
         </div>
-        <div class="compliance-card">
+        <aside class="compliance-card" aria-label="Explain-Trail Beispiel aus dem Alltag">
           <h3>Explain-Trail im Alltag</h3>
-          <p>Jede Abweichung vom Standardpfad – z. B. Faktor &gt; 2,3 oder Analogposition – wird nachvollziehbar begründet und dokumentiert.</p>
-          <p>Das reduziert Diskussionen mit PKV/Beihilfe und erhöht die interne Sicherheit bei Prüfungen.</p>
-        </div>
+          <p>
+            Jede Abweichung vom Standardpfad – z. B. Faktor &gt; 2,3, Analogposition oder komplexe
+            Mehrphasen-CT – wird technisch begründet, mit Quellen versehen und im Explain-Trail hinterlegt.
+          </p>
+          <p>
+            Das senkt die Zahl der Rückfragen von PKV/Beihilfe und erhöht die Sicherheit gegenüber
+            internen und externen Prüfungen (z. B. QS, Revision, Gutachten).
+          </p>
+        </aside>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section contact">
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
       <div class="container contact-grid">
         <div>
           <header class="section-header align-left">
-            <h2>Demo, Pilot oder Strategiegespräch?</h2>
-            <p>Schreibe uns kurz, in welcher Rolle du unterwegs bist – Radiologie, PVS, Klinik oder Investor.</p>
+            <h2 id="contact-title">Demo, Pilot oder Strategiegespräch?</h2>
+            <p>
+              Schreibe kurz, in welcher Rolle du unterwegs bist – Radiologie, PVS, Klinik, Beratung oder Investor –
+              und was du konkret erreichen möchtest.
+            </p>
           </header>
           <p class="contact-text">
-            OrdoMedIQ ist aktuell in ausgewählten Radiologie- und PVS-Setups im Aufbau.
-            Wir suchen Partnerschaften, die Wert auf Revisionssicherheit, Transparenz und
-            wirtschaftliche Exzellenz legen.
+            OrdoMedIQ befindet sich in ausgewählten Radiologie-, MVZ- und PVS-Setups im Aufbau.
+            Wir suchen Partnerschaften, die Wert auf Revisionssicherheit, Transparenz und messbare
+            wirtschaftliche Effekte legen.
           </p>
           <ul class="contact-points">
             <li>• Use-Case-Workshops für Radiologie-MVZ &amp; Kliniken</li>
             <li>• Deep-Dives für PVS-Partner &amp; OEM-Integrationen</li>
-            <li>• Sparring für Investoren &amp; Strategie-Teams</li>
+            <li>• Sparring für Investor:innen &amp; Strategie-Teams</li>
           </ul>
         </div>
         <div>
@@ -300,7 +398,12 @@
             </div>
             <div class="field">
               <label for="message">Kurz Ihr Anliegen</label>
-              <textarea id="message" name="message" rows="4" placeholder="z. B. Pilot in Radiologie-MVZ, Anbindung an bestehende PVS, Demo-Termin"></textarea>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="z. B. Pilot in Radiologie-MVZ, Anbindung an bestehende PVS, Demo-Termin, Strategie-Workshop">
+              </textarea>
             </div>
             <button type="submit" class="btn primary full-width">Kontaktanfrage senden</button>
             <p class="form-note">
@@ -312,30 +415,50 @@
     </section>
 
     <!-- English overview -->
-    <section id="en-overview" class="section legal">
+    <section id="en-overview" class="section legal" aria-labelledby="en-title">
       <div class="container">
         <header class="section-header align-left">
-          <h2>English overview</h2>
-          <p>A short summary for international partners and investors.</p>
+          <h2 id="en-title">English overview</h2>
+          <p>A concise summary for international partners and investors.</p>
         </header>
         <div class="legal-body">
-          <p><strong>OrdoMedIQ · GOÄ Radiology Suite</strong> turns radiology documentation (CT/MRI/X-ray, including teleradiology) into audit-proof private invoices under the German GOÄ – with a full explain trail and PVS handover.</p>
+          <p>
+            <strong>OrdoMedIQ · GOÄ Radiology Suite</strong> turns radiology documentation
+            (CT/MRI/X-ray, including teleradiology) into audit-proof private invoices under the
+            German GOÄ – with a full explain trail and PVS/PAD handover.
+          </p>
           <ul>
-            <li><strong>Engine:</strong> Rule-based interpretation of radiology documentation, GOÄ section O, surcharges, factor rules and exclusions.</li>
-            <li><strong>Workspace:</strong> 3-pane UI with timeline, report/document viewer and evidence rail for all billing-relevant details.</li>
-            <li><strong>Compliance:</strong> Full support for §§4, 5, 6(2), 10 and 12 GOÄ including mandatory fields, factor reasoning and analog billing.</li>
-            <li><strong>Handover:</strong> PAD-ready data structures for PVS partners and clinics, plus BI cockpit for revenue and compliance KPIs.</li>
+            <li>
+              <strong>Engine:</strong> Rule-based interpretation of radiology documentation
+              (GOÄ section O), surcharges, factor rules and exclusions with a deterministic evaluation
+              order.
+            </li>
+            <li>
+              <strong>Workspace:</strong> 3-pane UI with timeline, report/document viewer and
+              evidence rail for all billing-relevant details (including §10 expenses and §5 reasoning).
+            </li>
+            <li>
+              <strong>Compliance:</strong> Full support for §§4, 5, 6(2), 10 and 12 GOÄ including
+              mandatory fields, factor thresholds and analog billing policies.
+            </li>
+            <li>
+              <strong>Handover:</strong> PAD-ready data structures for PVS partners and hospitals,
+              plus a BI cockpit for revenue, DSO and compliance KPIs.
+            </li>
           </ul>
-          <p>For a detailed discussion, please reach out via the contact form above and indicate that you prefer the conversation in English.</p>
+          <p>
+            For a detailed discussion, please reach out via the contact form above and indicate that
+            you prefer the conversation in English.
+          </p>
         </div>
       </div>
     </section>
 
     <!-- Impressum -->
-    <section id="impressum" class="section legal">
+    <section id="impressum" class="section legal" aria-labelledby="impressum-title">
       <div class="container">
         <header class="section-header align-left">
-          <h2>Impressum</h2>
+          <h2 id="impressum-title">Impressum</h2>
         </header>
         <div class="legal-body">
           <p><strong>Angaben nach § 5 TMG</strong></p>
@@ -347,57 +470,105 @@
             Deutschland
           </p>
           <p>
-            Telefon: +40017623822358
+            Telefon: +40017623822358<br />
             E-Mail: [E-Mail-Adresse]<br />
             Website: https://ordomediq.github.io/ordomediq_landingpage/
           </p>
-          <p><strong>Umsatzsteuer-ID</strong><br />
+          <p>
+            <strong>Umsatzsteuer-ID</strong><br />
             Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-            [falls vorhanden einsetzen]</p>
-          <p><strong>Berufshaftpflichtversicherung</strong><br />
+            [falls vorhanden einsetzen]
+          </p>
+          <p>
+            <strong>Berufshaftpflichtversicherung</strong><br />
             Name und Sitz des Versicherers:<br />
-            [Angaben einsetzen, falls erforderlich]</p>
-          <p><strong>Haftung für Inhalte</strong><br />
-            Die Inhalte dieser Seite wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird jedoch keine Gewähr übernommen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.</p>
-          <p><strong>Haftung für Links</strong><br />
-            Diese Seite enthält ggf. Links zu externen Webseiten Dritter, auf deren Inhalte kein Einfluss besteht. Für diese fremden Inhalte wird keine Gewähr übernommen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
-          <p><strong>Urheberrecht</strong><br />
-            Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+            [Angaben einsetzen, falls erforderlich]
+          </p>
+          <p>
+            <strong>Haftung für Inhalte</strong><br />
+            Die Inhalte dieser Seite wurden mit größter Sorgfalt erstellt. Für die Richtigkeit,
+            Vollständigkeit und Aktualität der Inhalte wird jedoch keine Gewähr übernommen.
+            Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den
+            allgemeinen Gesetzen bleiben hiervon unberührt.
+          </p>
+          <p>
+            <strong>Haftung für Links</strong><br />
+            Diese Seite enthält ggf. Links zu externen Webseiten Dritter, auf deren Inhalte kein
+            Einfluss besteht. Für diese fremden Inhalte wird keine Gewähr übernommen. Für die Inhalte
+            der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+          </p>
+          <p>
+            <strong>Urheberrecht</strong><br />
+            Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen
+            dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die
+            Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der
+            Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors
+            bzw. Erstellers.
+          </p>
         </div>
       </div>
     </section>
 
     <!-- Datenschutz -->
-    <section id="privacy" class="section legal">
+    <section id="privacy" class="section legal" aria-labelledby="privacy-title">
       <div class="container">
         <header class="section-header align-left">
-          <h2>Datenschutzerklärung (Kurzfassung)</h2>
+          <h2 id="privacy-title">Datenschutzerklärung (Kurzfassung)</h2>
           <p><strong>Hinweis:</strong> Diese Fassung ist ein unverbindliches Muster und ersetzt keine individuelle rechtliche Beratung.</p>
         </header>
         <div class="legal-body">
-          <p><strong>1. Verantwortliche Stelle</strong><br />
-            Verantwortlich für die Datenverarbeitung auf dieser Website ist die im Impressum genannte Person bzw. Gesellschaft.</p>
-          <p><strong>2. Besuch der Website</strong><br />
-            Beim Aufruf dieser Website werden durch den Browser automatisch Informationen an den Server der Seite gesendet (z. B. IP-Adresse, Datum und Uhrzeit des Abrufs, verwendeter Browser). Diese Daten werden in der Regel nur kurzfristig in Logfiles gespeichert und dienen der Sicherstellung des technischen Betriebs.</p>
-          <p><strong>3. Kontaktformular</strong><br />
-            Wenn Sie das Kontaktformular nutzen, werden die von Ihnen eingegebenen Daten (z. B. Name, E-Mail-Adresse, Nachricht) zur Bearbeitung Ihrer Anfrage verarbeitet. Die Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung bzw. vorvertragliche Maßnahmen) oder lit. f DSGVO (berechtigtes Interesse an der Beantwortung von Anfragen).</p>
-          <p><strong>4. Weitergabe von Daten</strong><br />
-            Eine Übermittlung Ihrer personenbezogenen Daten an Dritte findet grundsätzlich nur statt, wenn dies zur Bearbeitung Ihrer Anfrage erforderlich ist oder eine gesetzliche Verpflichtung besteht.</p>
-          <p><strong>5. Speicherdauer</strong><br />
-            Personenbezogene Daten werden nur so lange gespeichert, wie dies für die genannten Zwecke erforderlich ist oder gesetzliche Aufbewahrungsfristen bestehen.</p>
-          <p><strong>6. Ihre Rechte</strong><br />
-            Sie haben insbesondere das Recht auf Auskunft über Ihre gespeicherten personenbezogenen Daten, Berichtigung, Löschung, Einschränkung der Verarbeitung sowie Widerspruch gegen die Verarbeitung. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an die im Impressum genannte Kontaktadresse wenden.</p>
-          <p><strong>7. Externe Dienste</strong><br />
-            Sofern externe Dienste (z. B. Formdienstleister für das Kontaktformular) eingesetzt werden, erfolgt dies nur auf Grundlage geeigneter Auftragsverarbeitungsverträge nach Art. 28 DSGVO. Bitte prüfen und ergänzen Sie hier die konkret eingesetzten Dienste und Anbieter.</p>
+          <p>
+            <strong>1. Verantwortliche Stelle</strong><br />
+            Verantwortlich für die Datenverarbeitung auf dieser Website ist die im Impressum
+            genannte Person bzw. Gesellschaft.
+          </p>
+          <p>
+            <strong>2. Besuch der Website</strong><br />
+            Beim Aufruf dieser Website werden durch den Browser automatisch Informationen an den
+            Server der Seite gesendet (z. B. IP-Adresse, Datum und Uhrzeit des Abrufs, verwendeter
+            Browser). Diese Daten werden in der Regel nur kurzfristig in Logfiles gespeichert und dienen
+            der Sicherstellung des technischen Betriebs.
+          </p>
+          <p>
+            <strong>3. Kontaktformular</strong><br />
+            Wenn Sie das Kontaktformular nutzen, werden die von Ihnen eingegebenen Daten
+            (z. B. Name, E-Mail-Adresse, Nachricht) zur Bearbeitung Ihrer Anfrage verarbeitet.
+            Die Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung bzw. vorvertragliche
+            Maßnahmen) oder lit. f DSGVO (berechtigtes Interesse an der Beantwortung von Anfragen).
+          </p>
+          <p>
+            <strong>4. Weitergabe von Daten</strong><br />
+            Eine Übermittlung Ihrer personenbezogenen Daten an Dritte findet grundsätzlich nur statt,
+            wenn dies zur Bearbeitung Ihrer Anfrage erforderlich ist oder eine gesetzliche
+            Verpflichtung besteht.
+          </p>
+          <p>
+            <strong>5. Speicherdauer</strong><br />
+            Personenbezogene Daten werden nur so lange gespeichert, wie dies für die genannten
+            Zwecke erforderlich ist oder gesetzliche Aufbewahrungsfristen bestehen.
+          </p>
+          <p>
+            <strong>6. Ihre Rechte</strong><br />
+            Sie haben insbesondere das Recht auf Auskunft über Ihre gespeicherten personenbezogenen
+            Daten, Berichtigung, Löschung, Einschränkung der Verarbeitung sowie Widerspruch gegen
+            die Verarbeitung. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich
+            jederzeit an die im Impressum genannte Kontaktadresse wenden.
+          </p>
+          <p>
+            <strong>7. Externe Dienste</strong><br />
+            Sofern externe Dienste (z. B. Formdienstleister für das Kontaktformular) eingesetzt werden,
+            erfolgt dies nur auf Grundlage geeigneter Auftragsverarbeitungsverträge nach Art. 28 DSGVO.
+            Bitte prüfen und ergänzen Sie hier die konkret eingesetzten Dienste und Anbieter.
+          </p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
       <span>© OrdoMedIQ · GOÄ-Radiologie-Suite</span>
-      <nav class="footer-nav">
+      <nav class="footer-nav" aria-label="Footer-Navigation">
         <a href="#hero">Top</a>
         <a href="#impressum">Impressum</a>
         <a href="#privacy">Datenschutz</a>
