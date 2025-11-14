@@ -375,6 +375,54 @@
       </div>
     </section>
 
+    <div class="ai-magic reveal" aria-labelledby="ai-magic-title">
+  <h3 id="ai-magic-title">OrdoMedIQ AI · Refinement Preview</h3>
+  <p class="ai-magic-lead">
+    Ein realistischer Vorgeschmack, wie der OrdoMedIQ-Engine-Layer PVS- und Radiologie-Teams
+    bei der Feinjustierung der GOÄ-Strategie unterstützen kann – ohne echte Patientendaten.
+  </p>
+
+  <form class="ai-magic-form" data-ai-widget>
+    <div class="ai-magic-grid">
+      <div class="ai-magic-input">
+        <label for="ai-role">Perspektive</label>
+        <select id="ai-role" name="role">
+          <option value="radiologie">Radiologie-Praxis / MVZ</option>
+          <option value="pvs">PVS / Abrechnungsdienstleister</option>
+          <option value="klinik">Klinik / Controlling</option>
+          <option value="investor">Investor / Strategie</option>
+        </select>
+
+        <label for="ai-question">Fragestellung</label>
+        <textarea
+          id="ai-question"
+          name="question"
+          rows="3"
+          placeholder="z. B. Wie reduzieren wir Rückläufer bei CT Abdomen mit KM um 30 %?"
+        ></textarea>
+
+        <button type="submit" class="btn primary ai-magic-btn">
+          AI-Magic Vorschlag anzeigen
+        </button>
+        <p class="ai-magic-note">
+          Hinweis: Demo-Preview. Es werden keine echten Patientendaten verarbeitet – die Antworten
+          basieren auf typischen OrdoMedIQ-Regelwerken und PVS-Praxisbeispielen.
+        </p>
+      </div>
+
+      <div class="ai-magic-output" aria-live="polite">
+        <div class="ai-magic-output-inner" data-ai-output>
+          <p class="ai-magic-placeholder">
+            Stelle eine Frage aus deiner Rolle – die OrdoMedIQ AI skizziert einen möglichen
+            Refinement-Ansatz (Engine-Logik + PVS-Sicht).
+          </p>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+
     <!-- Contact -->
     <section id="contact" class="section contact" aria-labelledby="contact-title">
       <div class="container contact-grid">
