@@ -656,3 +656,25 @@ body {
   margin: 0.6rem 0 0.8rem;
   padding-left: 1.1rem;
 }
+/* layout helper für diese Landingpage */
+.container {
+  width: min(1120px, 100% - 2.4rem);
+  margin-inline: auto;
+}
+main {
+  padding-bottom: 4rem;
+}
+
+p {
+  margin: 0 0 0.75rem;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+a {
+  color: var(--accent-blue);
+}
+a:hover {
+  color: var(--accent-teal);
+}
