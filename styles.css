@@ -678,3 +678,128 @@ a {
 a:hover {
   color: var(--accent-teal);
 }
+/* AI Magic Widget */
+.ai-magic {
+  margin-top: 3rem;
+  border-radius: 1.5rem;
+  padding: 1.6rem 1.5rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-soft);
+}
+
+.ai-magic h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+}
+
+.ai-magic-lead {
+  margin: 0 0 1.2rem;
+  font-size: 0.9rem;
+  color: var(--text-subtle);
+}
+
+.ai-magic-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(0, 2.2fr);
+  gap: 1.4rem;
+}
+
+.ai-magic-input label {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+}
+
+.ai-magic-input select,
+.ai-magic-input textarea {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border-strong);
+  padding: 0.6rem 0.75rem;
+  background: var(--bg-soft);
+  color: var(--text-main);
+  font: inherit;
+  margin-bottom: 0.7rem;
+}
+
+.ai-magic-input textarea {
+  resize: vertical;
+}
+
+.ai-magic-input select:focus,
+.ai-magic-input textarea:focus {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 1px;
+}
+
+.ai-magic-btn {
+  margin-top: 0.2rem;
+}
+
+.ai-magic-note {
+  margin-top: 0.7rem;
+  font-size: 0.74rem;
+  color: var(--text-subtle);
+}
+
+.ai-magic-output {
+  border-radius: 1.1rem;
+  padding: 1.1rem 1rem;
+  background: radial-gradient(circle at top left, rgba(37,99,235,0.16), rgba(15,23,42,0.96));
+  border: 1px solid var(--border-strong);
+  font-size: 0.88rem;
+}
+
+.ai-magic-output-inner {
+  min-height: 6.5rem;
+}
+
+.ai-magic-placeholder {
+  margin: 0;
+  color: var(--text-subtle);
+  font-size: 0.86rem;
+}
+
+.ai-magic-output h4 {
+  margin: 0 0 0.3rem;
+  font-size: 0.95rem;
+}
+
+.ai-magic-output p {
+  margin: 0 0 0.4rem;
+}
+
+.ai-magic-output ul {
+  margin: 0.3rem 0 0.3rem 1.1rem;
+  padding: 0;
+}
+
+/* Loading-State */
+.ai-magic-loading {
+  opacity: 0.7;
+  font-size: 0.86rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.ai-magic-spinner {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  border: 2px solid rgba(148,163,184,0.5);
+  border-top-color: var(--accent-blue);
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 900px) {
+  .ai-magic-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
