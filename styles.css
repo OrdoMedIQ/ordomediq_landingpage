@@ -417,6 +417,33 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+.hero-card {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dezentes Logo-Wasserzeichen in der Hero-Card */
+.hero-card::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  background-image: url("ordomedIQ_LOGO.svg");
+  background-repeat: no-repeat;
+  background-position: 110% 110%;
+  background-size: 120px;
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+/* Mobile: kleiner & weiter raus, damit es nicht dominiert */
+@media (max-width: 540px) {
+  .hero-card::before {
+    background-size: 80px;
+    background-position: 120% 120%;
+    opacity: 0.05;
+  }
+}
+
 .pill {
   border-radius: 999px;
   padding: 0.2rem 0.7rem;
