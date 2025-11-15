@@ -803,3 +803,42 @@ a:hover {
   }
 }
 
+/* audio briefing */
+.audio-card {
+  margin-top: 1.6rem;
+  border-radius: 1.25rem;
+  padding: 1.2rem 1.4rem 1.4rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-soft);
+}
+
+.audio-meta {
+  margin-bottom: 0.9rem;
+}
+
+.audio-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.audio-sub {
+  margin-top: 0.2rem;
+  font-size: 0.82rem;
+  color: var(--text-subtle);
+}
+
+.audio-player {
+  width: 100%;
+  margin: 0.3rem 0 0.7rem;
+  outline: none;
+  border-radius: 0.7rem;
+  background: #020617;
+}
+
+/* Safari/Chrome haben eigenes UI – wir sorgen nur für Umgebung */
+.audio-note {
+  font-size: 0.78rem;
+  color: var(--text-subtle);
+}
+
