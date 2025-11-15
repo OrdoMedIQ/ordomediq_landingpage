@@ -1019,3 +1019,81 @@ a:hover {
     margin: 0;
   }
 }
+
+/* HERO · iPhone-Optimierung */
+@media (max-width: 540px) {
+
+  /* Hero insgesamt kompakter */
+  .hero {
+    padding-top: 3rem;
+    padding-bottom: 2.2rem;
+  }
+
+  .hero-grid {
+    gap: 1.3rem;
+  }
+
+  /* Headline + Subline kleiner & enger */
+  #hero-title,
+  .hero h1 {
+    font-size: 1.9rem;
+    line-height: 1.15;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 0.9rem;
+    max-width: 100%;
+  }
+
+  /* Buttons enger zusammen */
+  .hero-actions {
+    margin-bottom: 1rem;
+    gap: 0.6rem;
+  }
+
+  /* Metrics zusammenziehen, Fußnote raus */
+  .hero-metrics {
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+  }
+
+  .metric-value {
+    font-size: 1.3rem;
+  }
+
+  .metric-footnote {
+    display: none; /* macht den Block deutlich flacher */
+  }
+
+  /* Hero-Card kompakter */
+  .hero-card {
+    padding: 1.1rem 1.1rem;
+    border-radius: 1.1rem;
+  }
+
+  .hero-card-header {
+    margin-bottom: 0.7rem;
+  }
+
+  .hero-row {
+    margin-bottom: 0.25rem;
+  }
+
+  .hero-payment {
+    margin-top: 0.5rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .hero-tags {
+    gap: 0.3rem;
+  }
+
+  .hero-tags li {
+    font-size: 0.7rem;
+    padding: 0.18rem 0.5rem;
+  }
+}
