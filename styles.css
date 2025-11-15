@@ -995,4 +995,27 @@ a:hover {
     margin-top: -1rem !important;
   }
 }
+/* Mobile-Finetuning: Feature-Kacheln kompakter (iPhone etc.) */
+@media (max-width: 540px) {
+  .features-grid {
+    gap: 0.9rem;
+  }
 
+  .feature-card {
+    padding: 0.95rem 1rem;
+    border-radius: 0.9rem;
+    font-size: 0.84rem;
+  }
+
+  .feature-card h3 {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    margin-bottom: 0.25rem;
+  }
+
+  .feature-card p {
+    font-size: 0.8rem;
+    line-height: 1.35;
+    margin: 0;
+  }
+}
