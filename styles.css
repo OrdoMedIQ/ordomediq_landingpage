@@ -841,4 +841,71 @@ a:hover {
   font-size: 0.78rem;
   color: var(--text-subtle);
 }
+/* MOBILE SPACING FIX – iPhone Optimierung */
+@media (max-width: 540px) {
+
+  /* Section spacing halbieren */
+  .section {
+    padding-block: 2.6rem !important;
+  }
+
+  /* Header-Abstände */
+  .section-header {
+    margin-bottom: 1.4rem !important;
+  }
+
+  /* Headlines enger */
+  .section-header h2,
+  h2,
+  h3 {
+    margin-top: 0 !important;
+    margin-bottom: 0.6rem !important;
+    line-height: 1.15 !important;
+  }
+
+  /* Intro-Text und normale Texte */
+  p,
+  .section-lead,
+  .hero-subtitle {
+    margin-bottom: 1rem !important;
+    line-height: 1.45 !important;
+  }
+
+  /* Karten (Persona-Cards, Panels etc.) enger */
+  .persona-card,
+  .panel-card,
+  .compliance-card {
+    padding: 1rem !important;
+    margin-bottom: 1.1rem !important;
+  }
+
+  /* Listen enger */
+  ul li {
+    margin-bottom: 0.45rem !important;
+  }
+
+  /* Hero Metrics enger zusammen */
+  .hero-metrics {
+    gap: 0.8rem !important;
+    margin-top: 0.8rem !important;
+  }
+
+  /* Abstand oberhalb der großen Zwischenüberschriften */
+  h2 {
+    padding-top: 0.4rem !important;
+  }
+
+  /* Entfernt zu große Top-Offets einzelner Sections */
+  #personas,
+  #features,
+  #compliance,
+  #flow {
+    margin-top: -0.5rem !important;
+  }
+
+  /* Minimiert den Abstand zwischen aufeinanderfolgenden Sections */
+  section + section {
+    margin-top: -1rem !important;
+  }
+}
 
